@@ -1,0 +1,2 @@
+variable "tfversion" {}
+variable "sleep" {}
