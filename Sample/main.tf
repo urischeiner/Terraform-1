@@ -7,8 +7,10 @@ resource "null_resource" "delay" {
 
 output "version" {
   value = var.tfversion
+}
 output "color" {
   value = var.tfcolor
+}
 output "foo" {
   value = var.tffoo
 }
