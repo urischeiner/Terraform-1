@@ -4,7 +4,7 @@ provider "aws" {
   secret_key = var.secret_key
 }
 
-resource "aws_security_group" "sg-test" {
+resource "aws_security_group-uri" "sg-test" {
   description = "dev_test security group allows ssh for everyone"
   name        = "allow-ssh-${var.tag_name}"
   ingress {
