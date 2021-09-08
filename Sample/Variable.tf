@@ -3,7 +3,6 @@ variable "access_key" {
 }
 
 variable "secret_key" {
-    default = "oBrbNSCcRvNfCoCsAyCgubQrIK7pWpD+mwWzFvYq"
 }
 
 variable "region" {
