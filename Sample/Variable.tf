@@ -9,5 +9,4 @@ variable "region" {
 }
 
 variable "tag_name" {
-  default = "demo-1"
 }
