@@ -11,5 +11,5 @@ variable "region" {
 }
 
 variable "tag_name" {
-  default = "demo"
+  default = "demo-1"
 }
