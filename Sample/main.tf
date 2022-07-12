@@ -8,7 +8,7 @@ resource "aws_security_group" "sg-test" {
   description = "dev_test security group allows ssh for everyone"
   name        = "allow-ssh-${var.tag_name}"
   ingress {
-    from_port   = 22
+    from_port   = 23
     to_port     = 22
     protocol    = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
