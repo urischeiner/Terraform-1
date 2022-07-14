@@ -19,5 +19,6 @@ resource "aws_instance" "app_server" {
 
   tags = {
     Name = "ExampleAppServerInstance-env0"
+    Uri = "Test"
   }
 }
