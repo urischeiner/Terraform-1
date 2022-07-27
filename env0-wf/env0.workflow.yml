@@ -1,32 +1,32 @@
 environments:
   vpc:
     name: 'VPC and Network'
-    templateName: 'VPC'
+    templateName: 'Uri Wf template'
   db:
     name: DB
-    templateName: 'DB'
+    templateName: 'Uri Wf template'
     needs:
       - vpc
   eks:
     name: EKS
-    templateName: 'EKS'
+    templateName: 'Uri Wf template'
     needs:
       - vpc
   service1:
     name: 'Billing Service'
-    templateName: 'Billing Service'
+    templateName: 'Uri Wf template'
     needs:
       - db
       - eks
   service2:
     name: 'Configuration Service'
-    templateName: 'Configuration Service'
+    templateName: 'Uri Wf template'
     needs:
       - db
       - eks
   service3:
     name: 'Notification Service'
-    templateName: 'Notification Service'
+    templateName: 'Uri Wf template'
     needs:
       - db
       - eks
