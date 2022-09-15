@@ -22,6 +22,6 @@ resource "aws_instance" "app_server" {
   instance_type = "${var.type}"
 
   tags = {
-    Name = "ExampleAppServerInstance-Uri-8"
+    Name = "ExampleAppServerInstance-Uri-9"
   }
 }
