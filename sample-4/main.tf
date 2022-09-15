@@ -5,12 +5,13 @@ terraform {
       version = "~> 4.16"
     }
   }
-  backend "s3" {
-    bucket = "mybucket"
-    key    = "path/to/my/key"
-    region = "us-east-1"
-   }
-  required_version = ">= 1.2.0"
+ backend "s3" {
+    bucket     = "harness-jim-terraform-state"
+    key        = "us-east-2/drone.tfstate"
+    region     = "us-east-2"
+    encrypt    = true
+    kms_key_id = "alias/jim-terraform-bucket-key"
+  }  required_version = ">= 1.2.0"
 }
 
 provider "aws" {
