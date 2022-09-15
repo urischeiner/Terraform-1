@@ -6,9 +6,9 @@ terraform {
     }
   }
  backend "s3" {
-    bucket     = "harness-jim-terraform-state"
-    key        = "us-east-2/drone.tfstate"
-    region     = "us-east-2"
+    bucket     = "tf-bucket"
+    key        = "us-west-2/drone.tfstate"
+    region     = "us-west-2"
     encrypt    = true
     kms_key_id = "alias/jim-terraform-bucket-key"
   }  
