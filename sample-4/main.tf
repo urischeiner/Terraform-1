@@ -9,8 +9,6 @@ terraform {
     bucket     = "tf-uri-bucket"
     key        = "us-west-2/drone.tfstate"
     region     = "us-west-2"
-    encrypt    = true
-    kms_key_id = "alias/jim-terraform-bucket-key"
   }  
   required_version = ">= 1.2.0"
 }
