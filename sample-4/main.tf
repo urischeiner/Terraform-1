@@ -11,7 +11,8 @@ terraform {
     region     = "us-east-2"
     encrypt    = true
     kms_key_id = "alias/jim-terraform-bucket-key"
-  }  required_version = ">= 1.2.0"
+  }  
+  required_version = ">= 1.2.0"
 }
 
 provider "aws" {
