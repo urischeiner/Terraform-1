@@ -13,6 +13,15 @@ provider "aws" {
   region  = "us-west-2"
 }
 
+data "aws_ami" "app_server" {
+  filter {
+    name = "image-id"
+    values = ["ami-830c94e3"]
+  }
+
+  owners = ["099720109477"] # Canonical
+}
+
 resource "aws_instance" "app_server" {
   ami           = "ami-830c94e3"
   instance_type = "t2.small"
