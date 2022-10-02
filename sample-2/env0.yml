@@ -4,4 +4,4 @@ deploy:
   steps:
     terraformInit:
       before:
-        - 'echo Generating "stage.auto.tfvars" for "$STAGE"'
+        - 'echo Hello!!!'
