@@ -24,7 +24,7 @@ data "aws_ami" "app_server" {
 
 resource "aws_instance" "app_server" {
   ami           = "ami-830c94e3"
-  instance_type = "t2.micro"
+  instance_type = "t2.small"
   tags = {
     Name = "ExampleAppServerInstance-Uri-7"
   }
