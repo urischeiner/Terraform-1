@@ -24,7 +24,7 @@ data "aws_ami" "app_server" {
 
 resource "aws_instance" "app_server" {
   ami           = "ami-830c94e3"
-  instance_type = "t2.small"
+  instance_type = var.type
   tags = {
     Name = "ExampleAppServerInstance-Uri-spacelift"
   }
