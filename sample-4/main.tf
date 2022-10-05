@@ -26,7 +26,7 @@ resource "aws_instance" "app_server" {
   ami           = "ami-830c94e3"
   instance_type = "t2.small"
   tags = {
-    Name = "ExampleAppServerInstance-Uri-7"
+    Name = "ExampleAppServerInstance-Uri-spacelift"
   }
   
   lifecycle {
