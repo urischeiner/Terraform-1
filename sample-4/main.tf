@@ -16,6 +16,7 @@ provider "aws" {
 data "aws_ami" "app_server" {
   filter {
     name = "image-id"
+    subnet_id = "subnet-0d4be14d5f95eec6d"
     values = ["ami-830c94e3"]
   }
 
