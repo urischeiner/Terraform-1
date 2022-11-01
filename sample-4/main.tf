@@ -19,8 +19,8 @@ provider "aws" {
 #     values = ["ami-830c94e3"]
 #   }
 
-  owners = ["099720109477"] # Canonical
-}
+#   owners = ["099720109477"] # Canonical
+# }
 
 resource "aws_instance" "app_server" {
   ami           = "ami-09d3b3274b6c5d4aa"
