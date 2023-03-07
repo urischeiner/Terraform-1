@@ -13,14 +13,14 @@ provider "aws" {
   region  = "us-west-2"
 }
 
-data "aws_ami" "app_server" {
-  filter {
-    name = "image-id"
-    values = ["ami-830c94e3"]
-  }
+# data "aws_ami" "app_server" {
+#   filter {
+#     name = "image-id"
+#     values = ["ami-830c94e3"]
+#   }
 
-  owners = ["099720109477"] # Canonical
-}
+#   owners = ["099720109477"] # Canonical
+# }
 
 resource "aws_instance" "app_server" {
   ami           = "ami-830c94e3"
@@ -30,12 +30,12 @@ resource "aws_instance" "app_server" {
     Name = "ExampleAppServerInstance-Uri-6"
   }
   
-  lifecycle {
-    # The AMI ID must refer to an AMI that contains an operating system
-    # for the `x86_64` architecture.
-    precondition {
-      condition     = data.aws_ami.app_server.architecture == "x86_64"
-      error_message = "The selected AMI must be for the x86_64 architecture."
-    }
-  }
+#   lifecycle {
+#     # The AMI ID must refer to an AMI that contains an operating system
+#     # for the `x86_64` architecture.
+#     precondition {
+#       condition     = data.aws_ami.app_server.architecture == "x86_64"
+#       error_message = "The selected AMI must be for the x86_64 architecture."
+#     }
+#   }
 }
