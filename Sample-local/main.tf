@@ -27,7 +27,7 @@ resource "aws_instance" "app_server" {
   instance_type = "t2.small"
   subnet_id = "subnet-0d4be14d5f95eec6d"
   tags = {
-    Name = "ExampleAppServerInstance-Uri-6"
+    Name = "ExampleAppServerInstance-Uri-7"
   }
   
 #   lifecycle {
