@@ -10,7 +10,7 @@ terraform {
 }
 
 provider "aws" {
-  region  = "us-west-2"
+  region  = "us-east-1"
 }
 
 # data "aws_ami" "app_server" {
@@ -23,9 +23,9 @@ provider "aws" {
 # }
 
 resource "aws_instance" "my_ec2" {
-  ami           = "ami-830c94e3"
+  ami           = "ami-09d3b3274b6c5d4aa"
   instance_type = "t2.small"
-  subnet_id = "subnet-0d4be14d5f95eec6d"
+#   subnet_id = "subnet-0d4be14d5f95eec6d"
   tags = {
     Name = "ExampleAppServerInstance-Uri-7"
   }
