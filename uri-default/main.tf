@@ -42,8 +42,3 @@ resource "aws_instance" "CLI-local" {
     extra= var.extra
   }
 }
-
-variable "extra" {
-    type = string
-    default = "I am from the git"
-}
