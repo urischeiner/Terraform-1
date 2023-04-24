@@ -33,7 +33,7 @@ resource "aws_subnet" "main" {
 }
 
 resource "aws_instance" "ec2-be" {
-  instance_type = t2.small
+  instance_type = t2.micro
   ami           = "ami-830c94e3"
 #   subnet_id = aws_subnet.main.id
   tags = {
