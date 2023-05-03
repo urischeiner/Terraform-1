@@ -3,6 +3,11 @@ variable "extra" {
     default = "I am from the git"
 }
 
+variable "extra1" {
+    type = string
+    default = "I am from the git"
+}
+
 variable "instance_type" {
     type = string
 }
