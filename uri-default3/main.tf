@@ -68,19 +68,18 @@ resource "aws_s3_bucket_public_access_block" "s3_bucket" {
   restrict_public_buckets = false
 }
 
-
-resource "aws_s3_bucket_acl" "s3_bucket" {
-  bucket = aws_s3_bucket.s3_bucket.id
-
-  acl = "public-read"
-}
-
 resource "aws_s3_bucket_ownership_controls" "example" {
   bucket = aws_s3_bucket.s3_bucket.id
   rule {
     object_ownership = "BucketOwnerPreferred"
   }
 }
+
+resource "aws_s3_bucket_acl" "s3_bucket" {
+  bucket = aws_s3_bucket.s3_bucket.id
+  acl = "public-read"
+}
+
 
 
 resource "aws_s3_bucket_policy" "s3_bucket" {
