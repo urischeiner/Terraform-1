@@ -32,7 +32,7 @@ resource "aws_subnet" "main" {
   }
 }
 
-resource "aws_instance" "ec2test" {
+resource "aws_instance" "ec2test1" {
   instance_type = var.instance_type
   ami           = "ami-830c94e3"
 #   subnet_id = aws_subnet.main.id
