@@ -15,7 +15,7 @@ output "subnet_id" {
 
 output "instance_type" {
     description = "VM Instance type"
-    value = aws_instance.ec2-be.instance_type
+    value = aws_instance.ec2test1.instance_type
 }
 
 output "ip" {
