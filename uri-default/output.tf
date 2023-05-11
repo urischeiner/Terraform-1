@@ -20,7 +20,7 @@ output "instance_type" {
 
 output "ip" {
     description = "VM private IP"
-    value = aws_instance.ec2test.private_ip
+    value = aws_instance.ec2test1.private_ip
 }
 
 output "bucket_arn" {
