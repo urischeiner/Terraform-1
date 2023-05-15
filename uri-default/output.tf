@@ -1,17 +1,3 @@
-output "vpc_arn" {
-  description = "VPN ARN"
-  value = aws_vpc.main.arn
-}
-
-output "vpc_id" {
-  description = "VPN id"
-  value = aws_vpc.main.id
-}
-
-output "subnet_id" {
-    description = "Subnet ARN"
-    value = aws_subnet.main.id
-}
 
 output "instance_type" {
     description = "VM Instance type"
