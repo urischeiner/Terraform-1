@@ -24,16 +24,6 @@ resource "aws_instance" "ec2test1" {
   }
 }
 
-resource "aws_instance" "ec2test2" {
-  instance_type = var.instance_type
-  ami           = "ami-830c94e3"
-#   subnet_id = aws_subnet.main.id
-  tags = {
-    name = "ec2test2"
-    extra= var.extra
-  }
-}
-
 resource "aws_s3_bucket" "s3_bucket" {
   bucket_prefix = var.bucket_name
   tags = var.tags
