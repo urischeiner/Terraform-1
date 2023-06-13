@@ -16,7 +16,7 @@ provider "aws" {
 
 resource "aws_instance" "ec2test1" {
   instance_type = var.instance_type
-  ami           = "ami-830c94e3"
+  ami           = "ami-0aa7d40eeae50c9a9"
 #   subnet_id = aws_subnet.main.id
   tags = {
     name = "ec2test1"
