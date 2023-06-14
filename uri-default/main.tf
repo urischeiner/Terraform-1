@@ -37,7 +37,7 @@ resource "aws_instance" "ec2-be" {
   ami = "ami-830c94e3"
   # ami = "ami-0305d0b03812a425e"
 
-  # subnet_id = aws_subnet.main.id
+  subnet_id = "subnet-0aaaa2ce2b0237ba8"
   tags = {
     name = "ec2-be"
     extra= var.extra
