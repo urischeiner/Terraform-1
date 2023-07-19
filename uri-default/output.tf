@@ -23,6 +23,7 @@ output "ips" {
     value = {
       for instance in aws_instance.ec2-be:
       instance.name => instance.private_ip
+    }
 }
 
 output "bucket_arn" {
