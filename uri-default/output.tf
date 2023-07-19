@@ -18,9 +18,11 @@ output "instance_type" {
     value = aws_instance.ec2-be.instance_type
 }
 
-output "ip" {
+output "ips" {
     description = "VM private IP"
-    value = aws_instance.ec2-be.private_ip
+    value = {
+      for instance in aws_instance.ec2-be:
+      instance.name => instance.private_ip
 }
 
 output "bucket_arn" {
