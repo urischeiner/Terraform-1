@@ -13,10 +13,12 @@ output "subnet_id" {
     value = aws_subnet.main.id
 }
 
+/*
 output "instance_type" {
     description = "VM Instance type"
     value = aws_instance.ec2-be.instance_type
 }
+*/
 
 output "ips" {
     description = "VM private IP"
