@@ -24,7 +24,7 @@ output "ips" {
     description = "VM private IP"
     value = {
       for instance in aws_instance.ec2-be:
-      instance.ami => instance.private_ip
+      instance.host_id => instance.private_ip
     }
 }
 
