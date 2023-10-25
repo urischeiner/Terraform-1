@@ -46,8 +46,7 @@ resource "aws_instance" "ec2-be" {
 }
 
 resource "aws_s3_bucket" "s3_bucket" {
-  # bucket_prefix = var.bucket_name
-  bucket_prefix = "uri"
+  bucket_prefix = var.bucket_name
   tags = var.tags
 }
 
