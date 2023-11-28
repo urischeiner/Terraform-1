@@ -1,6 +1,7 @@
 output "vpc_arn" {
   description = "VPN ARN"
   value = aws_vpc.main.arn
+  sensitive = true
 }
 
 output "vpc_id" {
