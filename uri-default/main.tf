@@ -38,7 +38,7 @@ resource "aws_instance" "ec2-be" {
   count = 3
   # ami = "ami-0305d0b03812a425e"
 
-  subnet_id = "subnet-0aaaa2ce2b0237ba8"
+  subnet_id = "subnet-0ee15506cc30fa143"
   tags = {
     name = "ec2-be-${count.index}"
     extra= var.extra
